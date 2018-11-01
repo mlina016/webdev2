@@ -6,7 +6,7 @@
 // Based on Maptime Boston leaflet tutorial:
 // https://maptimeboston.github.io/leaflet-intro/
 // Author: Lucas Mlinar
-// Date: 23 Oct. 2018
+// Date: 1 Nov 2018
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -31,3 +31,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // FIXME: Add styling to markers
 // Use airport.png
+   var airport = L.icon({
+       iconUrl: 'airport.png',
+       iconSize: [38, 95],
+   })
+   var marker = L.marker([43.64701, -79.39425],{icon: airport}).addTo(map)
+   
